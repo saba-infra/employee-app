@@ -17,8 +17,8 @@ if (!isset($_GET['employee_id'])) {
 $employeeId = $_GET['employee_id'];
 
 // 2. Azure SQL Database 接続情報（PDO_SQLSRV）
-$server   = "tcp:sqlsrv-foremployeedb.database.windows.net,1433";
-$database = "employeedb";
+$server   = "tcp:sqlsrv-employee.database.windows.net,1433";
+$database = "employeesqldb-employee";
 $user     = "sqladmin";
 $password = "Test1997726!";
 

@@ -21,6 +21,7 @@ $server   = "tcp:sqlsrv-employee.database.windows.net,1433";
 $database = "sqldb-employee";
 $user     = "sqladmin";
 $password = getenv("SQL_PASSWORD");
+error_log("🔐 Password: " . ($password ? "取得成功" : "取得失敗"));
 
 // PDO_SQLSRV DSN構成
 $dsn = "sqlsrv:Server=$server;Database=$database";

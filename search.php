@@ -20,7 +20,7 @@ $employeeId = $_GET['employee_id'];
 $server   = "tcp:sqlsrv-employee.database.windows.net,1433";
 $database = "sqldb-employee";
 $user     = "sqladmin";
-$password = "Test1997726!";
+$password = getenv("SQL_PASSWORD");
 
 // PDO_SQLSRV DSN構成
 $dsn = "sqlsrv:Server=$server;Database=$database";
